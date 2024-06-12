@@ -8,36 +8,38 @@ const perguntas=[
   {
     enunciado: "Pergunta 1",
     alternativas:[
-      "Alternativa 1",
-      "Alternativa 2",
+      (
+    texto: "Alternativa 1",
+      afirmação: "afirmação",
+    texto: "Alternativa 2",
     ]
   },
   {
     enunciado: "Pergunta 1",
     alternativas:[
-      "Alternativa 1",
-      "Alternativa 2",
+    texto:  "Alternativa 1",
+    texto:  "Alternativa 2",
     ]
   },
   {
     enunciado: "Pergunta 1",
     alternativas:[
-      "Alternativa 1",
-      "Alternativa 2",
+    texto:  "Alternativa 1",
+    texto:  "Alternativa 2",
     ]
   },
   {
     enunciado: "Pergunta 1",
     alternativas:[
-      "Alternativa 1",
-      "Alternativa 2",
+    texto:  "Alternativa 1",
+    texto:  "Alternativa 2",
     ]
   },
   {
     enunciado: "Pergunta 1",
     alternativas:[
-      "Alternativa 1",
-      "Alternativa 2",
+    texto:  "Alternativa 1",
+    texto:  "Alternativa 2",
     ]
   },
 ];
