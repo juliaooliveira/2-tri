@@ -4,42 +4,75 @@ const caixaAlternativas=document.querySelector(".caixa-alternativas");
 const caixaResultado=document.querySelector(".caixa-resultado");
 const textoResultado=document.querySelector(".texto-resultado");
 
-const perguntas=[
+const perguntas = [
   {
-    enunciado: "Pergunta 1",
-    alternativas:[
-      (
-    texto: "Alternativa 1",
-      afirmação: "afirmação",
-    texto: "Alternativa 2",
+      enunciado: "A pizza está boa?",
+      alternativas:[
+      {
+          texto: "Sim",
+          afirmação: "Pois a pizzaria faz pizzas de qualidade",
+      },
+      {
+        texto: "Não",
+        afirmação: "Falta recheio"
+      }
     ]
   },
   {
-    enunciado: "Pergunta 1",
-    alternativas:[
-    texto:  "Alternativa 1",
-    texto:  "Alternativa 2",
-    ]
-  },
-  {
-    enunciado: "Pergunta 1",
-    alternativas:[
-    texto:  "Alternativa 1",
-    texto:  "Alternativa 2",
-    ]
-  },
-  {
-    enunciado: "Pergunta 1",
-    alternativas:[
-    texto:  "Alternativa 1",
-    texto:  "Alternativa 2",
-    ]
-  },
-  {
-    enunciado: "Pergunta 1",
-    alternativas:[
-    texto:  "Alternativa 1",
-    texto:  "Alternativa 2",
+        enunciado: "Você está feliz?",
+        alternativas:[
+        {
+          texto:  "Sim",
+          afirmação: "Tirei uma nota boa na prova!"
+        {,
+        }
+          texto:  "Não",
+          afirmação: "Porque tirei uma nota ruim na prova"
+        }
+      ]
+    },
+    {
+        enunciado: "Está bola de basquete está boa?",
+        alternativas:[
+        {
+          texto:  "Sim",
+          afirmação: "Está bem cheia"
+        {,
+        }
+          texto:  "Não",
+          afirmação: "Está murcha"
+        }
+      ]
+    },
+    {
+        enunciado: "Você está gostando das aulas?",
+        alternativas:[
+        {
+          texto:  "Sim",
+          afirmação: "As aulas são muito úteis"
+          {,
+          }
+          texto:  "Não",
+          afirmação: "As aulas são desnecessárias"
+        }
+      ]
+    },  
+    {
+        enunciado: "Esse shampoo é bom?",
+        alternativas:[
+        {  
+          texto:  "Sim",
+          afirmação: "Esse shampoo limpa muito bem"
+          {,
+          }
+          texto:  "Não",
+          afirmação: "Esse shampoo não limpa muito bem"
+        }
+      ]
+    },
+];
+
+    
     ]
   },
 ];
