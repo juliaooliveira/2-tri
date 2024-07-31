@@ -72,27 +72,43 @@ const perguntas = [
     },
 ];
 
-    
-    ]
-  },
-];
+let atual = 0;
+let perguntaAtual;
+let historiaFinal
 
-let atual=0;
-let perguntasAtual;
-
-function mostraPergunta (){
-  perguntaAtual=perguntas [atual];
-  caixaPerguntas.textContent=perguntaAtual.enunciado;
+function mostraPergunta() {
+    if(atual >= perguntas.length){
+    mostraResulta();
+    return;
+  }
+  perguntaAtual = perguntas[atual];
+  caixaPerguntas.textContent = perguntaAtual.enunciado;
+  caixaAlternativas.textContent = "";
   mostraAlternativas();
 }
-
-function mostraAlternativa(){
+function mostraPergunta (){
   for (const alternativa of perguntaAtual.alternativas){
-  const botaoAltrrnativas = document.createElement("button");
-  botaoAlternativas.textContent= alternativa;
-  caixaAlternativas.appendChild(botaoAlternativas);
-  }
+    const botaoAltrrnativas = document.createElement("button");
+    botaoAlternativas.textContent= alternativa.texto;
+    botaoAlternativas.addEventListeneer("click",() => respostasSelecionada(alternativa));   
+    caixaAlternativas.appendChild(botaoAlternativas);
+    }
 }
+
+function respostaSelecionada(opcaoSelecionada){
+  const afirmacoes = opcaoSelecionada.afirmacoes;  mudar para opcaoSelecionada.afirmacao
+  historiaFinal += afirmacoes + " "; 
+  atual++;
+  mostraPergunta();
+}
+
+function mostraResultado(){
+caixaPerguntas.textContent = "Parabéns, você tem mais de 130qi.  :]"
+textoResultado.textContent = historiaFinal;
+caixaAlternativas.textContent ="";
+}
+
+mostraPergunta();
 
 
 
